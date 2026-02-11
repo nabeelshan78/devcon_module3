@@ -79,31 +79,33 @@ graph TD
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/yourusername/adaptive-reasoning-agent.git](https://github.com/yourusername/adaptive-reasoning-agent.git)
-cd adaptive-reasoning-agent
+git clone https://github.com/nabeelshan78/devcon_module3.git
+cd devcon_module3
 ```
 
 2. Create a Virtual Environment
-Bash
+```
 python -m venv venv
-
+```
 # Windows
 .\venv\Scripts\activate
 
-# Mac/Linux
-source venv/bin/activate
 3. Install Dependencies
-Bash
+```
 pip install -r requirements.txt
+```
 4. Configure Environment
-Create a .env file in the root directory (or update config.py directly, though .env is safer):
-
-Code snippet
+Update config.py directly for API
+```
 MISTRAL_API_KEY=your_mistral_api_key_here
+```
+
 5. Run the Application
-Bash
+```
 streamlit run app.py
-📂 Project Structure
+```
+
+# 📂 Project Structure
 ```
 adaptive-reasoning-agent/
 ├── app.py                     # Main Streamlit UI entry point
