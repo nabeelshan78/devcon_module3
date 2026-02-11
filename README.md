@@ -88,7 +88,7 @@ cd devcon_module3
 python -m venv venv
 ```
 # Windows
-.\venv\Scripts\activate
+```.\venv\Scripts\activate```
 
 3. Install Dependencies
 ```
