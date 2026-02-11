@@ -1,0 +1,14 @@
+requests
+numpy
+openai
+python-dotenv
+termcolor  # For pretty terminal output
+google-genai
+mistralai
+pypdf 
+scikit-learn
+fpdf 
+openpyxl
+duckduckgo-search
+ddgs
+python-docx
