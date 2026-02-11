@@ -104,7 +104,7 @@ MISTRAL_API_KEY=your_mistral_api_key_here
 Bash
 streamlit run app.py
 📂 Project Structure
-Plaintext
+```
 adaptive-reasoning-agent/
 ├── app.py                     # Main Streamlit UI entry point
 ├── config.py                  # Configuration & Thresholds
@@ -119,25 +119,23 @@ adaptive-reasoning-agent/
     │   └── web_tool.py         # Adaptive Web Search
     └── utils/
         └── network.py          # Latency detection logic
-💡 Usage Examples
+```
+
+# Usage Examples
 Generating Documents
 User: "Create an Excel sheet comparing the revenue of Apple, Google, and Microsoft."
 
-Agent: Detects DOC intent -> Parses data -> Creates .xlsx -> Provides [Download] button.
+>> Agent: Detects DOC intent -> Parses data -> Creates .xlsx -> Provides [Download] button.
 
-Adaptive Search
-User: "What is the latest news on Quantum Computing?"
+# Adaptive Search
+- User: "What is the latest news on Quantum Computing?"
+- Agent (Deep Mode): Performs a deep web search (8+ sources), synthesizes a detailed report.
+- Agent (Fast Mode): Grabs top 3 headlines, provides a 2-sentence summary.
 
-Agent (Deep Mode): Performs a deep web search (8+ sources), synthesizes a detailed report.
+## RAG Analysis
+- Action: Upload a PDF via the Sidebar.
+- User: "Summarize the key findings of this paper."
+- Agent: Vectorizes the PDF -> Retrieves top-k chunks -> Generates grounded summary.
 
-Agent (Fast Mode): Grabs top 3 headlines, provides a 2-sentence summary.
 
-RAG Analysis
-Action: Upload a PDF via the Sidebar.
-User: "Summarize the key findings of this paper."
-Agent: Vectorizes the PDF -> Retrieves top-k chunks -> Generates grounded summary.
-
-🛡️ License
-This project is open-source and available under the MIT License.
-
-Built for the DevCon Module 3 Challenge.
+>>Built for the DevCon Module 3 Challenge.
